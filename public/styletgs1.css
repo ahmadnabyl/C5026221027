@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Inter:wght@300;500;600;700&display=swap);
+
+body{
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 4%;
+}
+
+.nabil-dots { 
+    position: absolute;
+    top: 26px;
+    right: 362px;
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nabil-dots::after {
+    content: '...';
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+  }
+
+.nabil-logo {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 16px;
+}
+
+.nabil-judul {
+    margin-left: 12px;
+    margin-right: 12px;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.nabil-deskripsi {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 32px;
+}
+
+.nabil-tombol {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #43e660; 
+    background-color: #43e660;
+    border-radius: 15px;
+    padding: 15px 0px 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 670px;
+    height: 23px;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+}
+
+.nabil-tombol:hover {
+    transform: scale(1.04); 
+}
+
+.nabil-tombol:hover::after {
+    content: '...'; 
+    font-weight: bold;
+    position: absolute;bn
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-80%);
+    font-size: 18px;
+    color: black;
+}
+
+.nabil-bottom{
+    text-align: center;
+    margin-top: 5px ;
+    width: 125px;
+}
