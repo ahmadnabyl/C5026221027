@@ -70,4 +70,6 @@ Route::get('/latihan7', function () {
 	return view('latihan7');
 });
 
+Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+
 
