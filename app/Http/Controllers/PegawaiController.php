@@ -89,4 +89,12 @@ class PegawaiController extends Controller
 		return view('index',['pegawai' => $pegawai , 'cari' => $cari]);
 
 	}
+    public function view($id)
+{
+    // Get the data of the selected employee
+    $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->first();
+
+    // Pass the employee data to the view
+    return view('view', ['pegawai' => $pegawai]);
+}
 }
