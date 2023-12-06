@@ -90,11 +90,10 @@ class PegawaiController extends Controller
 
 	}
     public function view($id)
-{
-    // Get the data of the selected employee
-    $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->first();
-
-    // Pass the employee data to the view
-    return view('view', ['pegawai' => $pegawai]);
-}
+	{
+		// mengambil data pegawai berdasarkan id yang dipilih
+		$pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
+		// passing data pegawai yang didapat ke view view.blade.php
+		return view('view',['pegawai' => $pegawai]);
+	}
 }

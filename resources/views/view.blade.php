@@ -1,28 +1,54 @@
 @extends('master2')
-@section('judulhalaman', 'Detail Pegawai')
+@section('judulhalaman', 'Data Pegawai')
 
 @section('konten')
+<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+<h3>Informasi Pegawai</h3>
 
-    <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-    <h2>Informasi Pegawai</h2>
-
-    <a href="/pegawai" class="btn btn-success"> <- Kembali</a>
+<a href="/pegawai" class="btn btn-success"><- Kembali</a>
 
     <br/>
     <br/>
 
     <div class="row">
-        <div class="col-sm-2 bg-white text-black p-3 border" style="height: 280px;">
-            <div class="border" style="width: 100%; height: 100%;"></div>
-
+        <div class="col-6 border">
         </div>
-        <div class="col-sm-3 bg-white text-black p-3 border">
-            <p class="card-title">Nama    : {{ $pegawai->pegawai_nama }}</p>
-            <p class="card-text">Jabatan  : {{ $pegawai->pegawai_jabatan }}</p>
-            <p class="card-text"> Umur    : {{ $pegawai->pegawai_umur }}</p>
-            <p class="card-text">Alamat   : {{ $pegawai->pegawai_alamat }}</p>
-            <br>
-            <input type="button" onclick="window.location.href='/pegawai'" value="OK" class="btn btn-primary">
+        <div class="col-6">
+            @foreach ($pegawai as $p)
+            <fieldset disabled>
+                <form action="/pegawai/update" method="post" class="form-horizontal " role="form">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="id" value="{{ $p->pegawai_id }}">
+                    <div class = "form-group row">
+                        <label for = "nama" class = "col-sm-2 control-label">Nama</label>
+                        <div class = "col-sm-8">
+                            <input type="text" required="required" name="nama" value="{{ $p->pegawai_nama }}" class="form-control">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "jabatan" class = "col-sm-2 control-label">Jabatan</label>
+                        <div class = "col-sm-8">
+                            <input type="text" required="required" name="jabatan" value="{{ $p->pegawai_jabatan }}" class="form-control">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "umur" class = "col-sm-2 control-label">Umur</label>
+                        <div class = "col-sm-8">
+                            <input type="number" required="required" name="umur" value="{{ $p->pegawai_umur }}" class="form-control">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "alamat" class = "col-sm-2 control-label">Alamat</label>
+                        <div class = "col-sm-8">
+                            <textarea required="required" name="alamat" class="form-control">{{ $p->pegawai_alamat }}</textarea>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+            @endforeach
+            <div class="text-center" style="width:520px">
+                <a href="/pegawai" class="btn btn-primary w-25">OK</a>
+            </div>
         </div>
     </div>
 
