@@ -31,12 +31,6 @@
                 <input type="text" class="form-control" id="umur" name="umur">
             </div>
         </div>
-        <div class="form-group row">
-            <label for="alamat" class="col-sm-1 col-form-label">Alamat</label>
-            <div class="col-sm-4">
-                <textarea name="alamat" class="form-control" id="alamat"></textarea>
-            </div>
-        </div>
         <input type="submit" value="Simpan Data" class="btn btn-primary">
     </form>
 @endsection

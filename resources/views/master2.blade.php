@@ -17,10 +17,16 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="/pegawai">Data Pegawai</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="/nilaikuliah">Nilai Kuliah</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kaos">Tugas Pra EAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
           </li>
 
           <!-- Dropdown -->
@@ -29,9 +35,10 @@
               DATABASE
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/pegawai">Pegaewai</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="/pegawai">Pegawai</a>
+              <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
+              <a class="dropdown-item" href="/kaos">Tugas Pra UAS</a>
+              <a class="dropdown-item" href="/keranjangbelanja">Keranjang Belanja</a>
             </div>
           </li>
         </ul>
