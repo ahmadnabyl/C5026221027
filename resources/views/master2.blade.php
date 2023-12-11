@@ -28,6 +28,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/keranjangbelanja">Keranjang Belanja</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/karyawan">Karyawan</a>
+          </li>
 
           <!-- Dropdown -->
           <li class="nav-item dropdown">
@@ -39,6 +42,7 @@
               <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
               <a class="dropdown-item" href="/kaos">Tugas Pra UAS</a>
               <a class="dropdown-item" href="/keranjangbelanja">Keranjang Belanja</a>
+              <a class="dropdown-item" href="/karyawan">Karyawan</a>
             </div>
           </li>
         </ul>
